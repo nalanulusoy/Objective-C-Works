@@ -10,9 +10,13 @@
 		0827578021C1327F0089DE82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0827577F21C1327F0089DE82 /* AppDelegate.m */; };
 		0827578621C132800089DE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0827578421C132800089DE82 /* Main.storyboard */; };
 		0827578821C132810089DE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0827578721C132810089DE82 /* Assets.xcassets */; };
-		0827578B21C132810089DE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0827578921C132810089DE82 /* LaunchScreen.storyboard */; };
 		0827578E21C132810089DE82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0827578D21C132810089DE82 /* main.m */; };
-		0827579621C134E00089DE82 /* TableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0827579521C134E00089DE82 /* TableTableViewController.m */; };
+		082757AE21C14E790089DE82 /* UIIntroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082757AC21C14E790089DE82 /* UIIntroController.m */; };
+		082757B121C161BB0089DE82 /* UIIntroController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082757AD21C14E790089DE82 /* UIIntroController.xib */; };
+		082757BD21C17AB20089DE82 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082757BB21C17AB20089DE82 /* TableViewController.xib */; };
+		082757BF21C17B7A0089DE82 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082757BE21C17B7A0089DE82 /* TableViewController.m */; };
+		082757C521C17FB10089DE82 /* UItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 082757C321C17FB10089DE82 /* UItemTableViewCell.m */; };
+		082757C621C17FB10089DE82 /* UItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082757C421C17FB10089DE82 /* UItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +25,18 @@
 		0827577F21C1327F0089DE82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0827578521C132800089DE82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0827578721C132810089DE82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0827578A21C132810089DE82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0827578C21C132810089DE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0827578D21C132810089DE82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0827579421C134E00089DE82 /* TableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableTableViewController.h; sourceTree = "<group>"; };
-		0827579521C134E00089DE82 /* TableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableTableViewController.m; sourceTree = "<group>"; };
+		082757AB21C14E790089DE82 /* UIIntroController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIIntroController.h; sourceTree = "<group>"; };
+		082757AC21C14E790089DE82 /* UIIntroController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIIntroController.m; sourceTree = "<group>"; };
+		082757AD21C14E790089DE82 /* UIIntroController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIIntroController.xib; sourceTree = "<group>"; };
+		082757BB21C17AB20089DE82 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		082757BE21C17B7A0089DE82 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		082757C121C17CC00089DE82 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		082757C221C17FB10089DE82 /* UItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UItemTableViewCell.h; sourceTree = "<group>"; };
+		082757C321C17FB10089DE82 /* UItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UItemTableViewCell.m; sourceTree = "<group>"; };
+		082757C421C17FB10089DE82 /* UItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UItemTableViewCell.xib; sourceTree = "<group>"; };
+		08FD655221C25837005FB3D7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +69,22 @@
 		0827577D21C1327F0089DE82 /* TableViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				082757C121C17CC00089DE82 /* TableViewController.h */,
+				082757BB21C17AB20089DE82 /* TableViewController.xib */,
+				082757BE21C17B7A0089DE82 /* TableViewController.m */,
+				08FD655221C25837005FB3D7 /* PrefixHeader.pch */,
 				0827577E21C1327F0089DE82 /* AppDelegate.h */,
 				0827577F21C1327F0089DE82 /* AppDelegate.m */,
 				0827578421C132800089DE82 /* Main.storyboard */,
 				0827578721C132810089DE82 /* Assets.xcassets */,
-				0827578921C132810089DE82 /* LaunchScreen.storyboard */,
 				0827578C21C132810089DE82 /* Info.plist */,
 				0827578D21C132810089DE82 /* main.m */,
-				0827579421C134E00089DE82 /* TableTableViewController.h */,
-				0827579521C134E00089DE82 /* TableTableViewController.m */,
+				082757AB21C14E790089DE82 /* UIIntroController.h */,
+				082757AC21C14E790089DE82 /* UIIntroController.m */,
+				082757AD21C14E790089DE82 /* UIIntroController.xib */,
+				082757C221C17FB10089DE82 /* UItemTableViewCell.h */,
+				082757C321C17FB10089DE82 /* UItemTableViewCell.m */,
+				082757C421C17FB10089DE82 /* UItemTableViewCell.xib */,
 			);
 			path = TableViewExample;
 			sourceTree = "<group>";
@@ -128,9 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0827578B21C132810089DE82 /* LaunchScreen.storyboard in Resources */,
+				082757C621C17FB10089DE82 /* UItemTableViewCell.xib in Resources */,
+				082757B121C161BB0089DE82 /* UIIntroController.xib in Resources */,
 				0827578821C132810089DE82 /* Assets.xcassets in Resources */,
 				0827578621C132800089DE82 /* Main.storyboard in Resources */,
+				082757BD21C17AB20089DE82 /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0827579621C134E00089DE82 /* TableTableViewController.m in Sources */,
+				082757AE21C14E790089DE82 /* UIIntroController.m in Sources */,
+				082757C521C17FB10089DE82 /* UItemTableViewCell.m in Sources */,
 				0827578E21C132810089DE82 /* main.m in Sources */,
+				082757BF21C17B7A0089DE82 /* TableViewController.m in Sources */,
 				0827578021C1327F0089DE82 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,14 +178,6 @@
 				0827578521C132800089DE82 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0827578921C132810089DE82 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0827578A21C132810089DE82 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF3C693K2T;
 				INFOPLIST_FILE = TableViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF3C693K2T;
 				INFOPLIST_FILE = TableViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

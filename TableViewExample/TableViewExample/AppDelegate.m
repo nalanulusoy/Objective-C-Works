@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UIIntroController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  
+   [self setupUI];
     // Override point for customization after application launch.
     return YES;
 }
@@ -47,5 +49,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
+-(void)setupUI{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    UIIntroController* intro = [[UIIntroController alloc] initWithNibName:@"UIIntroController" bundle:nil];
+    
+    UINavigationController* nc = [[UINavigationController alloc] init];
+    [nc setViewControllers:@[intro]];
+    [self.window setRootViewController:nc];
+    [self.window makeKeyAndVisible];
+}
 @end
